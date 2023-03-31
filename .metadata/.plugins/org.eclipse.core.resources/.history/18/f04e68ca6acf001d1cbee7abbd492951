@@ -1,0 +1,35 @@
+public class BinaryTree{
+	//This tree will be made such that it always goes left first and right after.
+	
+	private TreeNode<?,?> root;
+	//The start of the tree or subtree.
+	
+	public BinaryTree(TreeNode<?, ?> root)
+	{
+		this.root = root;
+	}
+	
+	public BinaryTree()
+	{
+		this.root = null;
+	}
+	
+	public static void main(String[] args)
+	{
+		TreeNode<Integer, Integer> testerR = new TreeNode<Integer, Integer>();
+		testerR.setKey(1);
+		testerR.setValue(1);
+		
+		TreeNode<Integer, Integer> testerL = new TreeNode<Integer, Integer>();
+		testerL.setKey(3);
+		testerL.setValue(3);
+		
+		TreeNode<Integer, Integer> tester = new TreeNode<Integer, Integer>();
+		tester.setKey(2);
+		tester.setValue(2);
+		tester.setRight(testerR);
+		tester.setLeft(testerL);
+		
+		BinaryTree test = new BinaryTree(tester);
+	}
+}

@@ -1,0 +1,31 @@
+public class BinaryTree extends TreeNode<Object, Object>{
+	//This tree will be made such that it always goes left first and right after.
+	
+	private TreeNode<?,?> root;
+	//The start of the tree or subtree.
+	
+	private TreeNode<?,?> left;
+	//The left child of the root.
+	
+	private TreeNode<?,?> right;
+	//The right child of the root.
+	
+	public BinaryTree(TreeNode<Object, Object> root)
+	{
+		this.root = root;
+		this.left = null;
+		this.right = null;
+	}
+	
+	public BinaryTree()
+	{
+		this.root = null;
+		this.left = null;
+		this.right = null;
+	}
+	
+	public static void main(String[] args)
+	{
+		BinaryTree test = new BinaryTree();
+	}
+}
